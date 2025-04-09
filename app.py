@@ -12,9 +12,9 @@ def index():
     chatbots = [
         {
             'id': 1,
-            'name': 'chatbot1',
+            'name': '왕도준',
             'image': url_for('static', filename='images/chatbot1/thumbnail.png'),
-            'tags': ['#챗봇', '#유머', '#일상']
+            'tags': ['#서강대', '#화석선배', '#뻔선', '#캠퍼스']
         },
         {
             'id': 2,
@@ -42,10 +42,10 @@ def index():
 def detail(bot_id):
     chatbot_data = {
        1: {
-           "name": "chatbot1",
+           "name": "왕도준",
            'image': url_for('static', filename='images/chatbot1/thumbnail.png'),
-           "description": "chatbot1의 설명입니다.",
-           'tags': ['#챗봇', '#유머', '#일상']
+           "description": "《내 뻔선은 17학번?!》 밥약 신청했을 뿐인데, 17학번 선배가 튀어나왔다?! 어색한 첫 만남, 미묘한 세대 차이, 과연 이 둘의 밥약은 평범하게 끝날 수 있을까?",
+           'tags': ['#서강대', '#화석선배', '#뻔선', '#캠퍼스']
        },
        2: {
            "name": "chatbot2",
@@ -75,7 +75,7 @@ def detail(bot_id):
 @app.route('/chat/<int:bot_id>')
 def chat(bot_id):
     chatbot_names = {
-        1: "chatbot1",
+        1: "내 뻔선은 17학번?!",
         2: "chatbot2",
         3: "chatbot3",
         4: "chatbot4"

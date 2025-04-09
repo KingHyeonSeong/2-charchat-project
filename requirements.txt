@@ -5,3 +5,9 @@ numpy
 
 ##추가 패키지 작성
 
+chromadb
+langchain
+langchain_openai
+langchain_community
+konlpy
+JPype1

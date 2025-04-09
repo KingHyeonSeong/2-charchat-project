@@ -244,6 +244,7 @@
   </div>
   
   <!-- Video Modal -->
+  {% if bot_id == 1 %}
   <div id="videoModal" class="modal">
     <div class="modal-content">
       <button class="modal-close" data-close-modal="videoModal">&times;</button>
@@ -254,48 +255,156 @@
       </video>
     </div>
   </div>
+  {% elif bot_id == 2 %}
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal="videoModal">&times;</button>
+      <h2>영상 보기</h2>
+      <video controls style="width:100%; border-radius:8px; margin-top: 20px;">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  {% elif bot_id == 3 %}
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal="videoModal">&times;</button>
+      <h2>영상 보기</h2>
+      <video controls style="width:100%; border-radius:8px; margin-top: 20px;">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  {% elif bot_id == 4 %}
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal="videoModal">&times;</button>
+      <h2>영상 보기</h2>
+      <video controls style="width:100%; border-radius:8px; margin-top: 20px;">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  {% endif %}
   
   <!-- Image Gallery Modal -->
+  {% if bot_id == 1 %}
   <div id="imageModal" class="modal">
     <div class="modal-content">
       <button class="modal-close" data-close-modal="imageModal">&times;</button>
       <h2>그림 보기</h2>
       <div class="image-grid">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery1.png') }}" alt="Gallery 1">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery2.png') }}" alt="Gallery 2">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery3.png') }}" alt="Gallery 3">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery4.png') }}" alt="Gallery 4">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery5.png') }}" alt="Gallery 5">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery6.png') }}" alt="Gallery 6">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery7.png') }}" alt="Gallery 7">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery8.png') }}" alt="Gallery 8">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery9.png') }}" alt="Gallery 9">
-        <img src="{{ url_for('static', filename='images/chatbot1/gallery10.png') }}" alt="Gallery 10">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo1.png') }}" alt="photo1">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo2.png') }}" alt="photo2">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo3.png') }}" alt="photo3">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo4.png') }}" alt="photo4">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo5.png') }}" alt="photo5">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo6.png') }}" alt="photo6">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo7.png') }}" alt="photo7">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo8.png') }}" alt="photo8">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo9.png') }}" alt="photo9">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo10.png') }}" alt="photo10">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo11.png') }}" alt="photo11">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo12.png') }}" alt="photo12">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo13.png') }}" alt="photo13">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo14.png') }}" alt="photo14">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo15.png') }}" alt="photo15">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo16.png') }}" alt="photo16">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo17.png') }}" alt="photo17">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo18.png') }}" alt="photo18">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo19.png') }}" alt="photo19">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo20.png') }}" alt="photo20">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo21.png') }}" alt="photo21">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo22.png') }}" alt="photo22">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo23.png') }}" alt="photo23">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo24.png') }}" alt="photo24">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo25.png') }}" alt="photo25">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo26.png') }}" alt="photo26">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo27.png') }}" alt="photo27">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo28.png') }}" alt="photo28">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo29.png') }}" alt="photo29">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo30.png') }}" alt="photo30">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo31.png') }}" alt="photo31">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo32.png') }}" alt="photo32">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo33.png') }}" alt="photo33">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo34.png') }}" alt="photo34">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo35.png') }}" alt="photo35">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo36.png') }}" alt="photo36">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo37.png') }}" alt="photo37">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo38.png') }}" alt="photo38">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo39.png') }}" alt="photo39">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo40.png') }}" alt="photo40">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo41.png') }}" alt="photo41">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo42.png') }}" alt="photo42">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo43.png') }}" alt="photo43">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo44.png') }}" alt="photo44">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo45.png') }}" alt="photo45">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo46.png') }}" alt="photo46">
+        <img src="{{ url_for('static', filename='images/chatbot1/photo47.png') }}" alt="photo47">
       </div>
     </div>
   </div>
+  {% elif bot_id == 2 %}
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal="imageModal">&times;</button>
+      <h2>그림 보기</h2>
+      <div class="image-grid">
+        <!-- chatbot2의 이미지들 -->
+      </div>
+    </div>
+  </div>
+  {% elif bot_id == 3 %}
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal="imageModal">&times;</button>
+      <h2>그림 보기</h2>
+      <div class="image-grid">
+        <!-- chatbot3의 이미지들 -->
+      </div>
+    </div>
+  </div>
+  {% elif bot_id == 4 %}
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal="imageModal">&times;</button>
+      <h2>그림 보기</h2>
+      <div class="image-grid">
+        <img src="{{ url_for('static', filename='images/chatbot4/photo1.png') }}" alt="Photo 1">
+        <img src="{{ url_for('static', filename='images/chatbot4/photo2.png') }}" alt="Photo 2">
+        <img src="{{ url_for('static', filename='images/chatbot4/photo3.png') }}" alt="Photo 3">
+        <img src="{{ url_for('static', filename='images/chatbot4/photo4.png') }}" alt="Photo 4">
+      </div>
+    </div>
+  </div>
+  {% endif %}
 
   <script>
-    // URL 파라미터 읽기
-    const urlParams = new URLSearchParams(window.location.search);
-    const botId = urlParams.get('bot_id') || '1';
-
-    // 로드할 JS 파일 결정
-    let jsFileName = 'chatbot_default.js';
-    if (botId === '1') {
-      jsFileName = 'chatbot1.js';
-    } else if (botId === '2') {
-      jsFileName = 'chatbot2.js';
-    } else if (botId === '3') {
-      jsFileName = 'chatbot3.js';
-    } else if (botId === '4') {
-      jsFileName = 'chatbot4.js';
+    // JS 파일이 한 번만 로드되도록 확인
+    if (!window.chatbotScriptLoaded) {
+      window.chatbotScriptLoaded = true;
+      
+      // HTML 데이터 속성에서 bot_id 읽기
+      const chatArea = document.querySelector('.chat-area');
+      const botId = chatArea.dataset.botId || '1';
+  
+      // 로드할 JS 파일 결정
+      let jsFileName = 'chatbot_default.js';
+      if (botId === '1') {
+        jsFileName = 'chatbot1.js';
+      } else if (botId === '2') {
+        jsFileName = 'chatbot2.js';
+      } else if (botId === '3') {
+        jsFileName = 'chatbot3.js';
+      } else if (botId === '4') {
+        jsFileName = 'chatbot4.js';
+      }
+  
+      // <script> 태그 동적으로 생성
+      const scriptTag = document.createElement('script');
+      scriptTag.src = `/static/js/${jsFileName}`;
+      document.body.appendChild(scriptTag);
     }
-
-    // <script> 태그 동적으로 생성
-    const scriptTag = document.createElement('script');
-    scriptTag.src = `/static/js/${jsFileName}`;
-    document.body.appendChild(scriptTag);
   </script>
 </body>
 </html>
